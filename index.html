@@ -6,7 +6,19 @@
         <title>Luca's awesome-sauce website</title>
         <style>
             body {
-                background-color: rgb(126, 126, 126);
+                background-image: url(STAR.png );
+                background-repeat: repeat;
+                background-color: black;
+                animation: movebackround 2s linear infinite
+            }
+
+            @keyframes movebackround{
+                from{
+                    background-position: 0 0;
+                }
+                to{
+                    background-position: 600px 500px;
+                }
             }
 
             button{
