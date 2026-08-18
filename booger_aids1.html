@@ -2,10 +2,22 @@
 <html lang="en">
     <head>
         <style>
-            body{
-                background-color: darkorchid;
-
+            body {
+                background-image: url(lance.png );
+                background-repeat: repeat;
+                background-color: rgb(98, 1, 255);
+                animation: movebackround 2s linear infinite
             }
+
+            @keyframes movebackround{
+                from{
+                    background-position: 0 0;
+                }
+                to{
+                    background-position: 0px 500px;
+                }
+            }
+
             .container{
                 background-color: blueviolet;
                 text-align: center;
