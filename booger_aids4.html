@@ -8,8 +8,18 @@
             body{
                 background-image: url(dttg.png);
                 background-repeat: repeat;
-                background-color: white;              
+                background-color: white;  
+                animation: movebackround 4s linear infinite;            
                 
+            }
+
+             @keyframes movebackround{
+                from{
+                    background-position: 0 0;
+                }
+                to{
+                    background-position: 0px -700px;
+                }
             }
 
             .containerttc{
