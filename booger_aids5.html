@@ -1,34 +1,151 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>jackSON page</title>
+        <title>School page</title>
         <link rel="stylesheet" href="style.css">
         <link rel="icon" href="STAR.ico">
         <style>
             body{
                 background-color: black;
-                background-image: url(jackSONN.jpeg);
+                background-image: url(tilebg.png);
                 background-repeat: repeat;
-                animation: movebackround 2s linear infinite;
+            }
+               
+            .schoolsupercontaier{
+                width: 950px;
+                height: auto;
+                border: gray;
+                border-width: 3px;
+                border-style: groove;
+                margin: 0 auto;
+                background-color: rgb(113, 113, 113);
+                text-align: center;
+                
+            }
+
+            .schoolsupercontaierinvis{
+                width: 950px;
+                height: auto;
+                margin: 0 auto;
+                text-align: left;
+                
+            }
+
+            .schoolbuttonrack{
+                width: 950px;
+                height: 70px;
+                background-color: rgb(113, 113, 113);
+                display: flex;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+                gap: 7px;
 
             }
 
-            @keyframes movebackround{
-                from{
-                    background-position: 0 0;
-                }
-                to{
-                    background-position: 0px -3880px;
-                }
+            .schoolbutton{
+                font-family: 'Times New Roman', Times, serif;
+                height: 70px;
+                width: 150px;
+                background-color: rgb(157, 155, 155);
+                color: rgb(207, 206, 206);
+                font-size: xx-large;
+                border: darkgrey;
+                border-width: 3px;
+                border-style: inset;
+                margin-bottom: 7px;
+
+            }
+
+            .schoolbutton:hover{
+                height: 70px;
+                width: 150px;
+                background-color: gray;
+                color: rgb(255, 255, 255);
+                border-width: 3px;
+                border-style: outset;
+                
+            }
+
+            span{
+                font-family: deltarune;
+            }
+
+            .dbuttonss{
+                height: 50px auto;
+                width: 850px auto;
+                border: darkgray;
+                border-width: 5px;
+                border-style: solid;
+                margin: 0 auto;
+                background-color: rgb(157, 155, 155);
+                color: rgb(207, 206, 206);
+                margin-left: 15px;
+                
+            }
+
+            .dbuttonss:hover{
+                margin: 0 auto;
+                background-color: rgb(119, 118, 118);
+                color: rgb(255, 255, 255);
+                border: rgb(99, 98, 98);
+                border-width: 5px;
+                border-style: solid;
+                margin-left: 15px;
+
             }
 
         </style>
     </head>
     <body>
-        <a href="index.html">
-            <button class="dbuttons">
-                <span style="font-family: 'deltarune'; letter-spacing: 3px; font-size: xx-large;">&larr;Back</span>
-            </button>
-        </a>
+        <div class="schoolsupercontaier">
+            <div style="display: flex; align-items: center; justify-content: center;">
+            <h1 style="font-family: deltarune; letter-spacing: 3px; font-size: xx-large; color: lightgray; text-align: center;">____/SCHOOL PAGE\____</h1>
+            </div>    
+            <hr style="color: slategray;">
+            <div class="schoolbuttonrack">
+                <a href="booger_aids6.html">
+                    <button class="schoolbutton">
+                        <span>ART</span>
+                    </button>
+                </a>
+                <a href="booger_aids7.html">
+                    <button class="schoolbutton">
+                        <span>MATH</span>
+                    </button>
+                </a>
+                <a href="booger_aids8.html">
+                    <button class="schoolbutton">
+                        <span>IDL</span>
+                    </button>
+                </a>
+                <a href="booger_aids9.html">
+                    <button class="schoolbutton">
+                        <span>SD</span>
+                    </button>
+                </a>
+                <a href="booger_aids10.html">
+                    <button class="schoolbutton">
+                        <span>ECS</span>
+                    </button>
+                </a>
+                <a href="booger_aids11.html">
+                    <button class="schoolbutton">
+                        <span>HEALTH</span>
+                    </button>
+                </a>
+            </div>
+            <hr style="color: slategray;">
+            <h1 style="font-family: deltarune; letter-spacing: 3px; font-size: x-large; color: lightgray;">_/‾‾‾‾\________/‾‾‾‾\_</h1>
+            <h1 style="font-family: deltarune; letter-spacing: 3px; font-size: x-large; color: lightgray;">    |HOMEPAGE|</h1>
+            <h1 style="font-family: deltarune; letter-spacing: 3px; font-size: x-large; color: lightgray;">_____________________________________/‾‾‾‾‾‾‾‾\_____________________________________</h1>
+        </div>
+        <div class="schoolsupercontaierinvis">
+            <a href="index.html">
+                <button class="dbuttonss" style="margin-top: 15px;">
+                    <span style="font-family: 'deltarune'; letter-spacing: 3px; font-size: xx-large;">&larr;Back</span>
+                </button>
+            </a>
+        </div>
     </body>
 </html>
