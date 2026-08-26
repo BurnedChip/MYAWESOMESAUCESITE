@@ -7,6 +7,16 @@
     font-display: swap;
     
 }
+
+@font-face{
+    font-family: "heckphonk";
+    src: url(Hellbone.woff) format(woff);
+    src: url(Hellbone.woff) format(woff2);
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 .dbuttons{
     height: 50px auto;
     width: 150px auto;
