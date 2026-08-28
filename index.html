@@ -79,14 +79,40 @@
             }
 
             .container2{
-                background-color: rgb(255, 200, 0);
+                background: repeating-linear-gradient(
+                    45deg,
+                    #000000,
+                    #000000 20px, 
+                    #ffaa00 20px,
+                    #ffaa00 40px
+                );
                 width: 650px;
                 height: 90px;
                 margin: 0 auto;
                 text-align: center;
                 border: darkgoldenrod;
                 border-style: dashed;
-                border-width: 3px;
+                border-width: 4px;
+                overflow: hidden;
+                background-size: 56.56px 56.56px;
+                animation: stripeslide 0.3s linear infinite;
+                
+            }
+            
+            @keyframes stripeslide{
+                from{
+                    background-position: 0 0;
+                }
+                to{
+                    background-position: 56.56px 0;
+                }
+            }
+
+            .txtborder{
+                text-shadow: 
+                    -3px -3px 0 #000,  0px -3px 0 #000,  3px -3px 0 #000,
+                    -3px  0px 0 #000,                      3px  0px 0 #000,
+                    -3px  3px 0 #000,  0px  3px 0 #000,  3px  3px 0 #000;
             }
 
             .fineprintcontainer{
@@ -136,7 +162,6 @@
                 background-repeat: repeat;
 
             }
-            
         </style>
     </head>
     <body>
@@ -144,7 +169,6 @@
             <div class="container">
                 <h1 class="felx-image" style="font-family: deltarune; letter-spacing: 2px;"> <a href="booger_aid2.html"><img src=ral.jpeg width="100" alt="rals.png"></a>Luca's awesome-sauce website<img src=ral.jpeg width="100" alt="rals.png"></h1>
             </div>
-
             <div class="buttonrack">
                 <a href="booger_aids1.html">
                     <button type="button">
@@ -167,11 +191,9 @@
                     </button>
                 </a>
             </div>
-        
             <div class="container2">
-                <h1 style="font-family: deltarune; letter-spacing: 2px;">!!UNFINISHED!!</h1>
+                <h1 style="font-family: deltarune; letter-spacing: 5px; margin-left: 15px; color: white; font-size: xx-large;" class="txtborder">!!UNFINISHED!!</h1>
             </div>
-
             <div class="container1">
                 <h1 style="font-family: deltarune; letter-spacing: 2px;">My skills</h1>
                 <div class="textcenter">
@@ -184,7 +206,6 @@
                     <hr class="thick">
                 </div>
             </div>
-
             <a href="https://github.com/BurnedChip/MYAWESOMESAUCESITE/tree/main">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" width="10px" style="margin-left: 5px;">
                 <small style="font-size: large;">github</small>
