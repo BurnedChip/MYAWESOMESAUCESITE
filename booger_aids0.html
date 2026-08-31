@@ -3,12 +3,12 @@
     <link rel="icon" href="STAR.ico">
     <link rel="stylesheet" href="style.css">
     <head>
-        <meta charset="utf-8">
-        <meta name="keywords" content="HTML, CSS,">
-        <meta name="descriptions" content="testing html">
-        <meta name="author" content="luca">
-        <meta http-equiv="refresh" content="30">
         <style>
+            body{
+                background-image: url(paper.jpeg);
+
+            }
+
             .dbuttons{
                 height: 50px;
                 width: 150spx;
@@ -27,27 +27,80 @@
                 color: black;
                 border-color: black;
             }
+            
+           .listcontainertitle{
+                width: 650px;
+                height: auto;
+                margin: 0 auto;
+                border: white;
+                border-style: outset;
+                border-width: 3px;
+                background-color: whitesmoke;
+                align-items: center;
+                align-self: center;
+                text-align: center;
+
+            }
+
+            .listcontainer{
+                width: 650px;
+                height: auto;
+                margin: 0 auto;
+                border: white;
+                border-style: outset;
+                border-width: 3px;
+                background-color: whitesmoke;
+                display: flex;
+
+            }
+
+            .listcontainerinvis{
+                width: 650px;
+                height: auto;
+                margin: 0 auto;
+                text-align: center;
+
+            }
+
+            h1{
+                font-family: 'Times New Roman', Times, serif;
+            }
+
+            button{
+                color: black;
+                background-color: whitesmoke;
+                border: lightgray;
+                border-width: 3px;
+                border-style: outset;
+            }
+
+            button:hover{
+                color: rgb(48, 48, 48);
+                background-color: rgb(181, 180, 180);
+                border: lightgray;
+                border-width: 3px;
+                border-style: inset;
+            }
+
         </style>
     </head>
     <body>
-        <a href="index.html">
-            <button class="dbuttons">
-                <span style="font-family: 'deltarune'; letter-spacing: 3px; font-size: xx-large;">&larr;Back</span>
-            </button>
-        </a>
-        <hr>
-        <h1>luca</h1>
-
-        <p>&#128509Out of the four main parts of and &lt&ltHTML&gt&gt the &#60head&#62 tag
-            contains information that describes a webpage but does not necessarily show on a webpage
-        </p>
-        </hr>
-        <h1>my favourite songs</h1>
-        <ol>
-            <li>music1</li>
-            <li>music2</li>
-            <li>music3</li>
-        </ol>
-        <img src="bigG.png" alt="bigG with lazer eyes" width="100">
+        <div class="listcontainertitle">
+            <h1>List of student sites</h1>
+        </div>
+        <div class="listcontainer">
+            <a href="https://yk-elijah2011-lore.github.io/Fun-zone2-/">
+                <button>
+                    <h3>Elijah's site</h3>
+                </button>
+            </a>
+        </div>
+        <div class="listcontainerinvis">
+            <a href="index.html">
+                <button>
+                    <span style="font-family: 'deltarune'; letter-spacing: 3px; font-size: xx-large;">&larr;Back</span>
+                </button>
+            </a>
+        </div>
     </body>
 </html>
