@@ -27,6 +27,7 @@
     margin: 0 auto;
     align-self: center;
     color: white;
+    transition: 0.15s;
                 
 }
 
@@ -34,5 +35,58 @@
     background-color: white;
     color: black;
     border-color: black;
+    transform: scale(1.06);
+
+}
+
+.schoolbutton{
+    font-family: 'Times New Roman', Times, serif;
+    height: 70px;
+    width: 150px;
+    background-color: rgb(157, 155, 155);
+    color: rgb(207, 206, 206);
+    font-size: xx-large;
+    border: darkgrey;
+    border-width: 3px;
+    border-style: inset;
+    margin-bottom: 7px;
+    transition: 0.15s;
+
+}
+
+.schoolbutton:hover{
+    height: 70px;
+    width: 150px;
+    background-color: gray;
+    color: rgb(255, 255, 255);
+    border-width: 3px;
+    border-style: outset;
+    transform: scale(1.06);
+                
+}
+
+.dbuttonss{
+    height: 50px auto;
+    width: 850px auto;
+    border: darkgray;
+    border-width: 5px;
+    border-style: solid;
+    margin: 0 auto;
+    background-color: rgb(157, 155, 155);
+    color: rgb(207, 206, 206);
+    margin-left: 15px;
+    transition: 0.15s;
+                
+}
+
+.dbuttonss:hover{
+    margin: 0 auto;
+    background-color: rgb(119, 118, 118);
+    color: rgb(255, 255, 255);
+    border: rgb(99, 98, 98);
+    border-width: 5px;
+    border-style: solid;
+    margin-left: 15px;
+    transform: scale(1.06);
 
 }
