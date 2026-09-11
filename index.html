@@ -197,17 +197,31 @@
                 margin-top: 40px;
             }
 
-            .hoversizebuttonsmall{
+            .transfinetextbuttonsrackaligncenter{
+                width: 650px;
+                height: 0 auto;
+                margin: 0 auto;
+                text-align: center;
+                margin-top: 15px;
+                display: flex;
+                align-items: center;
+                gap: 35px;
+                justify-content: center;
+
+            }
+
+            .hoversizebuttonsmallgit{
                 transition: 0.15s;
                 background-color: transparent;
                 border-color: transparent;
                 height: auto ;
                 width: 0 auto;
                 text-align: center;
+                display: inline-flex;
                 
             }
 
-            .hoversizebuttonsmall:hover{
+            .hoversizebuttonsmallgit:hover{
                 transform: scale(2);
                 color: rgb(245, 247, 248);
                 background-color: #393939;
@@ -215,14 +229,59 @@
                 
             }
 
-            .transfinetextbuttonsrackaligncenter{
-                width: 650px;
-                height: 0 auto;
-                margin: 0 auto;
+            .hoversizebuttonsmalldon{
+                transition: 0.15s;
+                background-color: transparent;
+                border-color: transparent;
+                height: auto ;
+                width: 0 auto;
                 text-align: center;
-                margin-top: 15px;
+                display: inline-flex;
+                gap: 16px;
+                
+            }
+
+            .hoversizebuttonsmalldon:hover{
+                transform: scale(2);
+                color: rgb(245, 247, 248);
+                background-color: #00ff44;
+                border-radius: 15px;
+                
+            }
+
+            .hoversizebuttonsmalldonbtnimgcontainer{
+                position: relative;
+                display: inline-block;
+                
+            }
+
+            .hoversizebuttonsmalldonbtnimgcontainer img{
+                position: absolute;
+                transition: opacity 0.15s ease-in-out;
+                display: inline-flex;
+                
+            }
+
+            .imghover{
+                opacity: 0;
+                margin-top: 1px;
+                
+            }
+
+            .imgdefault{
+                opacity: 1;
+                margin-top: 1px;
 
             }
+
+            .hoversizebuttonsmalldon:hover .imghover{
+                opacity: 1;
+            }
+
+            .hoversizebuttonsmalldon:hover .imgdefault{
+                opacity: 0;
+            }
+
         </style>
     </head>
     <body>
@@ -301,9 +360,18 @@
             </div>
             <div class="transfinetextbuttonsrackaligncenter">
                 <a href="https://github.com/BurnedChip/MYAWESOMESAUCESITE/tree/main" target="_blank">
-                    <button class="hoversizebuttonsmall">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" width="15px" style="margin-left: 5px;">
+                    <button class="hoversizebuttonsmallgit">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"width="15px" style="margin-left: 5px;">
                         <span style="font-size: large;">github</span>
+                    </button>
+                </a>
+                <a href="https://cash.app/$BurnedChip" target="_blank">
+                    <button class="hoversizebuttonsmalldon">
+                        <span class="hoversizebuttonsmalldonbtnimgcontainer">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Square_Cash_app_logo.svg" width="15px" class="imgdefault">
+                            <img src="https://www.svgrepo.com/show/341672/cashapp.svg" width="15px" class="imghover">
+                        </span>
+                        <span style="font-size: large;">donations</span>
                     </button>
                 </a>
             </div>
