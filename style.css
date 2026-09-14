@@ -17,6 +17,16 @@
     font-display: swap;
 }
 
+@font-face{
+    font-family: "minecraft";
+    src: url(Minecraft.woff) format(woff);
+    src: url(Minecraft.woff2) format(woff2);
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 .dbuttons{
     height: 50px auto;
     width: 150px auto;
