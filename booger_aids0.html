@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="icon" href="STAR.ico">
+    <link rel="stylesheet" href="style.css">
+    <head>
+        <style>
+            body{
+                background-image: url(images/paper.jpeg);
+
+            }
+
+            .dbuttons{
+                height: 50px;
+                width: 150spx;
+                border: white;
+                background-color: black;
+                border-width: 5px;
+                border-style: solid;
+                margin: 0 auto;
+                align-self: center;
+                color: white;
+                
+            }
+
+            .dbuttons:hover{
+                background-color: white;
+                color: black;
+                border-color: black;
+            }
+            
+           .listcontainertitle{
+                width: 650px;
+                height: auto;
+                margin: 0 auto;
+                border: white;
+                border-style: outset;
+                border-width: 3px;
+                background-color: whitesmoke;
+                align-items: center;
+                align-self: center;
+                text-align: center;
+
+            }
+
+            .listcontainer{
+                width: 650px;
+                height: auto;
+                margin: 0 auto;
+                border: white;
+                border-style: outset;
+                border-width: 3px;
+                background-color: whitesmoke;
+                display: flex;
+
+            }
+
+            .listcontainerinvis{
+                width: 650px;
+                height: auto;
+                margin: 0 auto;
+                text-align: center;
+
+            }
+
+            h1{
+                font-family: 'Times New Roman', Times, serif;
+            }
+
+            h3{
+                font-family: 'Times New Roman', Times, serif;
+            }
+
+            button{
+                color: black;
+                background-color: whitesmoke;
+                border: lightgray;
+                border-width: 3px;
+                border-style: outset;
+                transition: 0.15s;
+            }
+
+            button:hover{
+                color: rgb(48, 48, 48);
+                background-color: rgb(181, 180, 180);
+                border: lightgray;
+                border-width: 3px;
+                border-style: inset;
+                transform: scale(1.06);
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="listcontainertitle">
+            <h1>List of student sites</h1>
+            <p>(use ctrl+F to search)</p>
+        </div>
+        <div class="listcontainer">
+            <a href="https://yk-elijah2011-lore.github.io/Fun-zone2-/" target="_blank">
+                <button>
+                    <h3>Elijah's site</h3>
+                </button>
+            </a>
+            <a href="https://deedereh.github.io/Aura/" target="_blank">
+                <button>
+                    <h3>Jackson's site</h3>
+                </button>
+            </a>
+        </div>
+        <div class="listcontainerinvis">
+            <a href="index.html">
+                <button>
+                    <span style="font-family: 'deltarune'; letter-spacing: 3px; font-size: xx-large;">&larr;Back</span>
+                </button>
+            </a>
+        </div>
+    </body>
+</html>
