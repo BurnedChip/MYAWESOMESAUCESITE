@@ -63,7 +63,7 @@
         <div class="schoolsupercontaier">
             <div style="display: flex; align-items: center; justify-content: center;" class="flex">
                 <span><img src="images/jackSONNnobg.png" width="100px"></span>
-                <a href="https://burnedchip.github.io/-/" target="_blank">
+                <a onclick="launchSite('https://burnedchip.github.io/-/')">
                     <button style="background-color: transparent; border: transparent;">
                         <span><img src="images/jordan.png" width="100px"></span>
                     </button>
@@ -136,5 +136,33 @@
                 </button>
             </a>
         </div>
+
+        // THIS ALL AI IDK HOW TO USE JS //
+        <script>
+        function launchSite(url) {
+            // 1. Open a new window with a blank page
+            const win = window.open('about:blank', '_blank');
+            
+            if (win) {
+                // 2. Access the blank page's document object
+                const doc = win.document;
+                
+                // 3. Inject an full-screen iframe into the blank window
+                doc.body.style.margin = '0';
+                doc.body.style.height = '100vh';
+                
+                const iframe = doc.createElement('iframe');
+                iframe.src = url;
+                iframe.style.border = 'none';
+                iframe.style.width = '100%';
+                iframe.style.height = '100%';
+                iframe.style.display = 'block';
+                
+                doc.body.appendChild(iframe);
+            } else {
+                alert('Popup blocked! Please allow popups for this site.');
+            }
+        }
+    </script>
     </body>
 </html>
