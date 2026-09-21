@@ -144,13 +144,24 @@
             const win = window.open('about:blank', '_blank');
             
             if (win) {
-                // 2. Access the blank page's document object
                 const doc = win.document;
                 
-                // 3. Inject an full-screen iframe into the blank window
+                // 2. Setup standard blank body styling
                 doc.body.style.margin = '0';
                 doc.body.style.height = '100vh';
                 
+                // 3. Inject the invisible title snippet (uses a blank character)
+                const title = doc.createElement('title');
+                title.innerHTML = '‎ '; 
+                doc.head.appendChild(title);
+
+                // 4. Inject the completely transparent favicon image
+                const favicon = doc.createElement('link');
+                favicon.rel = 'icon';
+                favicon.href = 'https://upload.wikimedia.org/wikipedia/commons/5/59/Empty.png';
+                doc.head.appendChild(favicon);
+                
+                // 5. Inject the full-screen iframe pointing to your GitHub page
                 const iframe = doc.createElement('iframe');
                 iframe.src = url;
                 iframe.style.border = 'none';
@@ -160,9 +171,9 @@
                 
                 doc.body.appendChild(iframe);
             } else {
-                alert('Popup blocked! Please allow popups for this site.');
+                alert('Popup blocked! Please allow popups in your browser settings.');
             }
         }
-    </script>
+        </script>
     </body>
 </html>
